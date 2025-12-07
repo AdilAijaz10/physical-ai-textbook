@@ -1,0 +1,13 @@
+.codeExamples {
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.explanation {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-size: 0.9em;
+}

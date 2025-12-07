@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p specs/physical-ai-textbook)",
+      "Bash(npm init docusaurus@latest textbook classic)",
+      "Bash(npm init docusaurus@latest . classic --typescript false)",
+      "Bash(npx create-docusaurus@latest . classic --typescript false)",
+      "Bash(npx create-docusaurus@latest . classic)",
+      "Bash(npx create-docusaurus@latest textbook classic --typescript false)",
+      "Bash(ls -la docs/module*/)",
+      "Bash(find docs/module* -name \"*.md\")",
+      "SlashCommand(/sp.constitution)",
+      "SlashCommand(/sp.specify)",
+      "Bash(git fetch --all --prune)",
+      "Bash(.specify/scripts/bash/create-new-feature.sh --json \"Build a comprehensive textbook for teaching Physical AI & Humanoid Robotics using Docusaurus. The book should cover: STRUCTURE: - Course overview and learning outcomes - 4 main modules over 13 weeks - Weekly breakdown with detailed topics - Assessment guidelines - Hardware requirements section CONTENT MODULES: Module 1 (Weeks 3-5): The Robotic Nervous System (ROS 2) - ROS 2 architecture, nodes, topics, services - Python integration with rclpy - URDF for humanoid robots Module 2 (Weeks 6-7): The Digital Twin (Gazebo & Unity) - Physics simulation in Gazebo - High-fidelity rendering in Unity - Sensor simulation (LiDAR, cameras, IMUs) Module 3 (Weeks 8-10): The AI-Robot Brain (NVIDIA Isaac) - Isaac Sim for photorealistic simulation - Isaac ROS for VSLAM and navigation - Nav2 for bipedal movement Module 4 (Weeks 11-13): Vision-Language-Action (VLA) - Voice commands with OpenAI Whisper - LLM cognitive planning - Capstone project: Autonomous Humanoid REQUIREMENTS: - Each week should have dedicated chapter/section - Include code examples, diagrams, and practical exercises - Hardware requirements clearly documented - Learning objectives for each module - Prerequisites and setup instructions - Glossary and additional resources - Mobile-responsive design - Search functionality - Clean navigation structure\" --json --number 1 --short-name \"physical-ai-textbook\")",
+      "Bash(.specify/scripts/bash/setup-plan.sh --json)",
+      "Bash(.specify/scripts/bash/update-agent-context.sh claude)",
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json)",
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)",
+      "Bash(git rev-parse --git-dir)",
+      "Bash(npm init -y)",
+      "Bash(npm install @docusaurus/core@latest @docusaurus/preset-classic@latest @mdx-js/react prism-react-renderer)",
+      "Bash(npm install @docusaurus/module-type-aliases @docusaurus/types @mdx-js/react clsx prism-react-renderer @docusaurus/preset-classic @docusaurus/core react react-dom @docusaurus/plugin-content-docs)",
+      "Bash(npm install @docusaurus/preset-classic @docusaurus/module-type-aliases @docusaurus/types mathjax@3)",
+      "Bash(npm install mdx-mermaid)",
+      "Bash(npm install @docusaurus/plugin-katex @docusaurus/theme-mermaid)",
+      "Bash(npm install @docusaurus/module-type-aliases @docusaurus/types @docusaurus/plugin-content-docs @docusaurus/preset-classic)",
+      "Bash(npm install)",
+      "Bash(npm install @docusaurus/theme-mermaid)",
+      "Bash(npm install docusaurus-plugin-math)",
+      "Bash(npm install @docusaurus/plugin-content-blog)",
+      "Bash(npm run start)",
+      "Bash(npm run clear)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Builds
+build/
+dist/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env*
+!.env.example
+
+# Coverage
+coverage/
+.nyc_output
+
+# Docusaurus
+.docusaurus/
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.nyc_output
+coverage/
+junit.xml
+*.gcov
+*.lcov
+*.out
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db

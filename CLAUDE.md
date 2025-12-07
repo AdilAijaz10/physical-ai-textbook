@@ -208,3 +208,10 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- JavaScript/TypeScript with Node.js v18+ for Docusaurus 3.x compatibility + Docusaurus 3.x (latest stable), React 18+, MDX, Algolia DocSearch, Prism.js for syntax highlighting, Mermaid for diagrams (001-physical-ai-textbook)
+- Static file storage (Git-based), no database required for textbook content (001-physical-ai-textbook)
+
+## Recent Changes
+- 001-physical-ai-textbook: Added JavaScript/TypeScript with Node.js v18+ for Docusaurus 3.x compatibility + Docusaurus 3.x (latest stable), React 18+, MDX, Algolia DocSearch, Prism.js for syntax highlighting, Mermaid for diagrams

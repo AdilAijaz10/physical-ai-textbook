@@ -1,0 +1,23 @@
+.practicalExercises {
+  background-color: #fff8f0;
+  border-left: 4px solid #ff8c00;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.practicalExercises h3 {
+  margin-top: 0;
+  color: #ff8c00;
+}
+
+.exercise {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.exercise:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

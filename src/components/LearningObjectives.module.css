@@ -1,0 +1,11 @@
+.learningObjectives {
+  background-color: #f0f8ff;
+  border-left: 4px solid #2e8555;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.learningObjectives h3 {
+  margin-top: 0;
+  color: #2e8555;
+}
