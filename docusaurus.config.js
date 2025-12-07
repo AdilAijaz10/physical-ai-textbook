@@ -41,7 +41,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-username/physical-ai-textbook/tree/main/',
+            'https://github.com/AdilAijaz10/physical-ai-textbook/tree/main/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -91,7 +91,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/your-username/physical-ai-textbook',
+            href: 'https://github.com/AdilAijaz10/physical-ai-textbook',
             label: 'GitHub',
             position: 'right',
           },
