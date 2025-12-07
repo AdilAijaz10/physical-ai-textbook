@@ -77,7 +77,7 @@ const config = {
         title: 'Physical AI & Humanoid Robotics',
         logo: {
           alt: 'Physical AI Textbook Logo',
-          src: 'img/logo.svg', // TODO: Add actual logo
+          src: 'img/logo.svg',
         },
         items: [
           {

@@ -2,14 +2,15 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
-import undrawDocusaurusMountain from '@site/static/img/undraw_docusaurus_mountain.svg';
-import undrawDocusaurusTree from '@site/static/img/undraw_docusaurus_tree.svg';
-import undrawDocusaurusReact from '@site/static/img/undraw_docusaurus_react.svg';
+import RobotRos from '@site/static/img/robot-ros.svg';
+import RobotSimulation from '@site/static/img/robot-simulation.svg';
+import RobotAi from '@site/static/img/robot-ai.svg';
+import RobotVla from '@site/static/img/robot-vla.svg';
 
 const FeatureList = [
   {
     title: 'Module 1: The Robotic Nervous System',
-    Svg: undrawDocusaurusMountain,
+    Svg: RobotRos,
     description: (
       <>
         Learn ROS 2 architecture, nodes, topics, services, Python integration with rclpy,
@@ -19,7 +20,7 @@ const FeatureList = [
   },
   {
     title: 'Module 2: The Digital Twin',
-    Svg: undrawDocusaurusTree,
+    Svg: RobotSimulation,
     description: (
       <>
         Explore physics simulation in Gazebo, high-fidelity rendering in Unity,
@@ -29,7 +30,7 @@ const FeatureList = [
   },
   {
     title: 'Module 3: The AI-Robot Brain',
-    Svg: undrawDocusaurusReact,
+    Svg: RobotAi,
     description: (
       <>
         Work with Isaac Sim for photorealistic simulation, Isaac ROS for VSLAM and navigation,
@@ -39,7 +40,7 @@ const FeatureList = [
   },
   {
     title: 'Module 4: Vision-Language-Action',
-    Svg: undrawDocusaurusReact,
+    Svg: RobotVla,
     description: (
       <>
         Implement voice commands with OpenAI Whisper, LLM cognitive planning,

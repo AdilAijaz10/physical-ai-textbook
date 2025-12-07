@@ -1,0 +1,13 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#25c2a0"/>
+  <g fill="white" transform="translate(600, 315) scale(3)">
+    <path d="M12 10 L20 10 L22 12 L22 14 L20 16 L12 16 L10 14 Z"/>
+    <circle cx="14" cy="14" r="1.5"/>
+    <circle cx="18" cy="14" r="1.5"/>
+    <path d="M14 18 L18 18 L19 20 L13 20 Z"/>
+    <circle cx="16" cy="22" r="1.5"/>
+    <path d="M15 20 L15 22 L17 22 L17 20 Z"/>
+  </g>
+  <text x="600" y="450" text-anchor="middle" font-family="Arial" font-size="48" fill="white">Physical AI &amp; Humanoid Robotics</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Arial" font-size="32" fill="white">Comprehensive textbook for teaching Physical AI &amp; Humanoid Robotics</text>
+</svg>
