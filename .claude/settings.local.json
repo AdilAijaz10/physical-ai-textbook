@@ -30,7 +30,16 @@
       "Bash(npm install docusaurus-plugin-math)",
       "Bash(npm install @docusaurus/plugin-content-blog)",
       "Bash(npm run start)",
-      "Bash(npm run clear)"
+      "Bash(npm run clear)",
+      "Bash(.specify/scripts/bash/create-new-feature.sh --json \"Build and embed a Retrieval-Augmented Generation (RAG) chatbot into the existing Docusaurus book site for \"\"Physical AI & Humanoid Robotics\"\". The chatbot must answer user questions about the book''s content by retrieving relevant sections from the Markdown docs. It should also support answering based only on user-selected text (e.g., highlight text on a page and query via the chat). Key features: Floating chat window or sidebar integration in Docusaurus; index all book Markdown content for retrieval; handle natural language questions; provide sources/citations for answers; error handling for irrelevant queries. Focus on what and why: Enable interactive learning by allowing users to query book content dynamically, improving engagement without leaving the page. Do not specify tech stack here.\" --json --number 1 --short-name \"rag-chatbot\")",
+      "Bash(npm install dotenv)",
+      "Bash(python -m uvicorn src.api.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(python3 -m uvicorn src.api.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(pip install -r requirements.txt)",
+      "Bash(npm run build)",
+      "Bash(pkill -f \"docusaurus start\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(pip3 install -r requirements.txt)"
     ],
     "deny": [],
     "ask": []

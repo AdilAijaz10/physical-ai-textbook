@@ -31,7 +31,11 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- Verify backend service integration guidelines compliance (Principle VII): Ensure API design follows RESTful patterns, authentication mechanisms, and CORS configurations
+- Confirm data privacy for RAG queries adherence (Principle VIII): Validate encryption, anonymization, and user consent mechanisms
+- Assess scalability with serverless databases approach (Principle IX): Check horizontal scaling capabilities and database connection management
+- Evaluate testing standards for AI-driven features (Principle X): Ensure accuracy benchmarks and model performance validation
+- All other existing constitution principles must also be satisfied
 
 ## Project Structure
 

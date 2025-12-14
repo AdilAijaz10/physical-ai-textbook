@@ -1,0 +1,129 @@
+openapi: 3.0.0
+info:
+  title: RAG Chatbot API
+  version: 1.0.0
+  description: API for the Retrieval-Augmented Generation chatbot for Physical AI & Humanoid Robotics Book
+
+paths:
+  /query:
+    post:
+      summary: Process a user query and return a response with citations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - query
+              properties:
+                query:
+                  type: string
+                  description: The user's natural language question
+                  example: "Explain how ROS 2 handles message passing between nodes"
+                selected_text:
+                  type: string
+                  description: Optional selected text to provide context
+                  example: "In ROS 2, nodes communicate through topics, services, and actions..."
+                session_id:
+                  type: string
+                  description: Optional session ID to maintain conversation history
+                  example: "550e8400-e29b-41d4-a716-446655440000"
+      responses:
+        '200':
+          description: Successful response with answer and citations
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - response
+                  - citations
+                  - session_id
+                properties:
+                  response:
+                    type: string
+                    description: The AI-generated response to the query
+                    example: "ROS 2 handles message passing through a publish-subscribe model where nodes publish messages to topics and other nodes subscribe to those topics..."
+                  citations:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        file_path:
+                          type: string
+                          example: "docs/module1/introduction-to-ros2.md"
+                        chunk_index:
+                          type: integer
+                          example: 3
+                        content_snippet:
+                          type: string
+                          example: "In ROS 2, nodes communicate through topics, services, and actions..."
+                        relevance_score:
+                          type: number
+                          format: float
+                          example: 0.85
+                  session_id:
+                    type: string
+                    example: "550e8400-e29b-41d4-a716-446655440000"
+        '400':
+          description: Bad request due to invalid input
+        '500':
+          description: Internal server error
+
+  /index-docs:
+    post:
+      summary: Index Docusaurus Markdown documents for RAG retrieval
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - doc_paths
+              properties:
+                doc_paths:
+                  type: array
+                  items:
+                    type: string
+                  description: Array of paths to Markdown files to index
+                  example: ["/docs/module1/introduction-to-ros2.md", "/docs/module2/control-systems.md"]
+      responses:
+        '200':
+          description: Successfully indexed documents
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  indexed_count:
+                    type: integer
+                    description: Number of documents successfully indexed
+                  status:
+                    type: string
+                    description: Status of the indexing operation
+                    example: "completed"
+        '400':
+          description: Bad request due to invalid input
+        '500':
+          description: Internal server error
+
+  /health:
+    get:
+      summary: Health check endpoint
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "healthy"
+                  timestamp:
+                    type: string
+                    format: date-time
+                    example: "2025-12-14T10:30:00Z"

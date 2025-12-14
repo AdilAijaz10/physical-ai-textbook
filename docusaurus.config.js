@@ -5,6 +5,8 @@
 // The next two lines are a good place to start:
 import {themes as prismThemes} from 'prism-react-renderer';
 
+require('dotenv').config(); // Load environment variables from .env file
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Physical AI & Humanoid Robotics Textbook',
@@ -23,12 +25,10 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Set the default language to English only
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ur'], // English and Urdu for multi-language support
+    locales: ['en'], // Only English
   },
 
   presets: [
@@ -71,6 +71,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Expose environment variables to client-side code
+      metadata: [
+        {name: 'env', content: process.env.NODE_ENV || 'development'},
+      ],
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg', // TODO: Add actual social card
       navbar: {
@@ -85,10 +89,6 @@ const config = {
             sidebarId: 'textbookSidebar',
             position: 'left',
             label: 'Textbook',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
           },
           {
             href: 'https://github.com/AdilAijaz10/physical-ai-textbook',

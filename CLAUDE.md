@@ -212,6 +212,8 @@ See `.specify/memory/constitution.md` for code quality, testing, performance, se
 ## Active Technologies
 - JavaScript/TypeScript with Node.js v18+ for Docusaurus 3.x compatibility + Docusaurus 3.x (latest stable), React 18+, MDX, Algolia DocSearch, Prism.js for syntax highlighting, Mermaid for diagrams (001-physical-ai-textbook)
 - Static file storage (Git-based), no database required for textbook content (001-physical-ai-textbook)
+- Python 3.11 for backend (FastAPI), JavaScript/TypeScript for frontend React component integration with Docusaurus + OpenAI SDK, FastAPI, Qdrant client, Neon Postgres driver, React for Docusaurus integration (001-rag-chatbot)
+- Neon Serverless Postgres for user sessions/metadata, Qdrant Cloud for book content embeddings (001-rag-chatbot)
 
 ## Recent Changes
 - 001-physical-ai-textbook: Added JavaScript/TypeScript with Node.js v18+ for Docusaurus 3.x compatibility + Docusaurus 3.x (latest stable), React 18+, MDX, Algolia DocSearch, Prism.js for syntax highlighting, Mermaid for diagrams
